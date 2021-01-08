@@ -23,7 +23,7 @@ arguments = parser.parse_args()
 # Options
 config_path = arguments.config_path[0]
 config = read_config_file(config_path)
-sequence_path = config['global']['sequence_file']
+sequence_path = config['global']['sequences_file']
 max_number_of_sequences = config['global'].get('max_number_of_sequences', 250)
 max_len = config['global'].get('max_len', 100)
 min_len = config['global'].get('min_len', 50)
